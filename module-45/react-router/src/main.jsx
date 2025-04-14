@@ -1,27 +1,49 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router";
-import App from './App';
-import Root from './components/Root/Root';
-import Home from './components/Home/Home';
-import Mobiles from './components/Mobiles/Mobiles';
-import Laptops from './components/Laptops/Laptops';
-import Monitors from './components/Monitors/Monitors';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import App from "./App";
+import Root from "./components/Root/Root";
+import Home from "./components/Home/Home";
+import Mobiles from "./components/Mobiles/Mobiles";
+import Laptops from "./components/Laptops/Laptops";
+import Monitors from "./components/Monitors/Monitors";
+import Users from "./components/Users/Users";
+import UserDetails from "./components/UserDetails/UserDetails";
+import Posts from "./components/Posts/Posts";
+import PostDetails from "./components/PostDetails/PostDetails";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     Component: Root,
     children: [
-      {index: true, Component: Home},
-      {path: 'mobiles', Component: Mobiles},
-      {path: 'laptops', Component: Laptops},
-      {path: 'monitors', Component: Monitors},
-    ]
+      { index: true, Component: Home },
+      { path: "mobiles", Component: Mobiles },
+      { path: "laptops", Component: Laptops },
+      { path: "monitors", Component: Monitors },
+      {
+        path: "users",
+        loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
+        Component: Users,
+      },
+      {
+        path: 'users/:userId',
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        Component: UserDetails,
+      },
+      {
+        path: 'posts',
+        loader: () => fetch('https://jsonplaceholder.typicode.com/posts'),
+        Component: Posts
+      },
+      {
+        path: 'posts/:postId',
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
+        Component: PostDetails
+      }
+
+    ],
   },
   // {
   //   path: 'about',
@@ -35,10 +57,10 @@ const router = createBrowserRouter([
   //   path: 'app',
   //   Component: App
   // },
-]) 
+]);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router}></RouterProvider>
-  </StrictMode>,
-)
+  </StrictMode>
+);
