@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "brand": "Apple",
+    "model": "MacBook Air M2",
+    "price": 1199,
+    "specs": {
+      "processor": "Apple M2",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "display": "13.6-inch Retina"
+    },
+    "imageUrl": "https://istockbd.com/cdn/shop/products/Macbook-Air-Space-Gray-M2-Price-in-Bangladesh.png?v=1661761447&width=600"
+  },
+  {
+    "id": 2,
+    "brand": "Dell",
+    "model": "XPS 13",
+    "price": 999,
+    "specs": {
+      "processor": "Intel Core i7-1250U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "13.4-inch FHD+"
+    },
+    "imageUrl": "https://computermania.com.bd/wp-content/uploads/2025/01/Dell-XPS-13-Plus-1.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "HP",
+    "model": "Spectre x360",
+    "price": 1249,
+    "specs": {
+      "processor": "Intel Core i7-1355U",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "13.5-inch OLED"
+    },
+    "imageUrl": "https://adminapi.applegadgetsbd.com/storage/media/large/HP-Spectre-x360-Convertible-14-EF2013DX-a-1801.jpg"
+  },
+  {
+    "id": 4,
+    "brand": "Lenovo",
+    "model": "ThinkPad X1 Carbon Gen 11",
+    "price": 1449,
+    "specs": {
+      "processor": "Intel Core i7-1365U",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14-inch WUXGA"
+    },
+    "imageUrl": "https://mcsolution.com.bd/wp-content/uploads/2023/03/Lenovo-ThinkPad-X1-Carbon-Gen-11-i7-2023-MC-Solution-BD.webp"
+  },
+  {
+    "id": 5,
+    "brand": "Asus",
+    "model": "Zenbook 14 OLED",
+    "price": 999,
+    "specs": {
+      "processor": "Intel Core i5-1240P",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14-inch OLED"
+    },
+    "imageUrl": "https://computermania.com.bd/wp-content/uploads/2025/01/ASUS-Zenbook-14-OLED-Q415MA-2.webp"
+  },
+  {
+    "id": 6,
+    "brand": "Acer",
+    "model": "Swift 5",
+    "price": 849,
+    "specs": {
+      "processor": "Intel Core i7-1260P",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "14-inch WQXGA"
+    },
+    "imageUrl": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/swift-5/swift-5-001-500x500.jpg"
+  },
+  {
+    "id": 7,
+    "brand": "Microsoft",
+    "model": "Surface Laptop 5",
+    "price": 1099,
+    "specs": {
+      "processor": "Intel Core i5-1235U",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "display": "13.5-inch PixelSense"
+    },
+    "imageUrl": "https://mcsolution.com.bd/wp-content/uploads/2022/10/Microsoft-Surface-Laptop-5-15-Platinum-Alcantara-Price-in-bangladesh-MC-Solution-BD-2.webp"
+  },
+  {
+    "id": 8,
+    "brand": "MSI",
+    "model": "Prestige 14 Evo",
+    "price": 899,
+    "specs": {
+      "processor": "Intel Core i7-1280P",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14-inch FHD"
+    },
+    "imageUrl": "https://computermania.com.bd/wp-content/uploads/2025/01/MSI-Prestige-14Evo-BD.jpg"
+  },
+  {
+    "id": 9,
+    "brand": "Razer",
+    "model": "Blade 14",
+    "price": 1999,
+    "specs": {
+      "processor": "AMD Ryzen 9 7940HS",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "14-inch QHD+ 240Hz"
+    },
+    "imageUrl": "https://www.startech.com.bd/image/cache/catalog/laptop/razer/blade-14/blade-14-001-500x500.jpg"
+  },
+  {
+    "id": 10,
+    "brand": "Samsung",
+    "model": "Galaxy Book3 Pro",
+    "price": 1399,
+    "specs": {
+      "processor": "Intel Core i7-1360P",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14-inch AMOLED"
+    },
+    "imageUrl": "https://adminapi.applegadgetsbd.com/storage/media/large/Galaxy-Book3-Pro-360-i7-13th-Gen-16-WQXGA+-AMOLED-Display-Laptop-(3)-1743.jpg"
+  },
+  {
+    "id": 11,
+    "brand": "LG",
+    "model": "Gram 14",
+    "price": 1199,
+    "specs": {
+      "processor": "Intel Core i7-1360P",
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "display": "14-inch WUXGA"
+    },
+    "imageUrl": "https://m.media-amazon.com/images/I/71UTfYZOmZL.__AC_SX300_SY300_QL70_FMwebp_.jpg"
+  },
+  {
+    "id": 12,
+    "brand": "Huawei",
+    "model": "MateBook X Pro",
+    "price": 1399,
+    "specs": {
+      "processor": "Intel Core i7-1360P",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "14.2-inch 3.1K"
+    },
+    "imageUrl": "https://www.perennial.com.bd/image/cache/catalog/laptop/huawei/11-500x500.jpg"
+  }
+]

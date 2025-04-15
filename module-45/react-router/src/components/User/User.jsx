@@ -10,7 +10,7 @@ const User = ({user}) => {
       <p>Email: {email}</p>
       <p>Website: {website}</p>
       <p>City: {address.city}</p>
-      <Link to={`/users/${id}`} className='btn'>View Details</Link>
+      <Link to={`/users/${id}`} className='btn mt-5'>View Details</Link>
     </div>
   );
 };

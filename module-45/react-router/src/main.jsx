@@ -20,29 +20,38 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: Home },
       { path: "mobiles", Component: Mobiles },
-      { path: "laptops", Component: Laptops },
+      { 
+        path: "laptops",
+        loader: () => fetch('laptops.json'),
+        Component: Laptops 
+      },
       { path: "monitors", Component: Monitors },
       {
         path: "users",
-        loader: () => fetch('https://jsonplaceholder.typicode.com/users'),
+        loader: () => fetch("https://jsonplaceholder.typicode.com/users"),
         Component: Users,
       },
       {
-        path: 'users/:userId',
-        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
+        path: "users/:userId",
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`),
         Component: UserDetails,
       },
       {
-        path: 'posts',
-        loader: () => fetch('https://jsonplaceholder.typicode.com/posts'),
-        Component: Posts
+        path: "posts",
+        loader: () => fetch("https://jsonplaceholder.typicode.com/posts"),
+        Component: Posts,
       },
       {
-        path: 'posts/:postId',
-        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
-        Component: PostDetails
+        path: "posts/:postId",
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
+        Component: PostDetails,
+      },
+      {
+        path: '*',
+        element: <div className="w-full flex items-center justify-center h-[50vh]"><h3 className="font-mono bg-amber-100 text-gray-800 p-4 rounded text-3xl">NOT FOUND : 4O4</h3></div>
       }
-
     ],
   },
   // {
