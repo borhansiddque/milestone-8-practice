@@ -12,6 +12,7 @@ import Users from "./components/Users/Users";
 import UserDetails from "./components/UserDetails/UserDetails";
 import Posts from "./components/Posts/Posts";
 import PostDetails from "./components/PostDetails/PostDetails";
+import NotFoundPage from "./components/NotFoundPage/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: '*',
-        element: <div className="w-full flex items-center justify-center h-[50vh]"><h3 className="font-mono bg-amber-100 text-gray-800 p-4 rounded text-3xl">NOT FOUND : 4O4</h3></div>
+        Component: NotFoundPage,
       }
     ],
   },
