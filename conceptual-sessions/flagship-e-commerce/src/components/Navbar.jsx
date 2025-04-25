@@ -59,7 +59,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 `font-bold font-mono text-lg ${
-                  isActive ? "text-orange-600" : "text-gray-700"
+                  isActive ? "text-[#7c9fe3] underline" : "text-gray-700"
                 }`
               }
               to="/"
@@ -71,7 +71,7 @@ const Navbar = () => {
             <NavLink
               className={({ isActive }) =>
                 `font-bold font-mono text-lg ${
-                  isActive ? "text-orange-600" : "text-gray-700"
+                  isActive ? "text-[#7c9fe3] underline" : "text-gray-700"
                 }`
               }
               to={"about"}

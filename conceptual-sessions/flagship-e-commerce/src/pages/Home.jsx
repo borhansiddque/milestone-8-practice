@@ -4,11 +4,11 @@ import PhoneContainer from "../components/PhoneContainer";
 import { useLoaderData } from "react-router";
 
 const Home = () => {
-  const data = useLoaderData();
+  const phones = useLoaderData();
   return (
     <>
       <Hero />
-      <PhoneContainer data={data} />
+      <PhoneContainer phones={phones} />
     </>
   );
 };
